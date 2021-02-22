@@ -15,5 +15,5 @@ for dir_name in sub_dir:
     fltr_list = [filename for filename in os.listdir(target_dir) if not filename.startswith('.')]
 
     for i in range(50):
-        newImgName = dir_name + '_' + str(i)
+        newImgName = dir_name + '_' + str(i).zfill(2)
         shutil.copyfile(target_dir+'/'+fltr_list[i], './results/'+dir_name+'/'+newImgName+'.jpg')
