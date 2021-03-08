@@ -15,5 +15,6 @@ with open('./amt.csv', 'w') as f:
         fltr_list = [filename for filename in os.listdir(dir_name) if not filename.startswith('.')]
         fltr_list = sorted(fltr_list)
         for image in fltr_list:
-            name = [image]
+            base = 'https://s3-ap-northeast-1.amazonaws.com/projects.crowd4u.org/s1811552/results/'
+            name = [base+dir+'/'+image]
             writer.writerow(name)
