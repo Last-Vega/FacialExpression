@@ -28,5 +28,5 @@ def calc_rate(f1, f2):
     return correct/count
 
 
-print(calc_rate('./Batch_4350992_batch_results.csv', './class_for_ds.tsv'))
-print(calc_rate('./Batch_4369243_batch_results.csv', './class_for_ds-1.tsv'))
+print(calc_rate('./Batch_4350992_batch_results.csv', './class_for_ds.tsv')) ## 48%
+print(calc_rate('./Batch_4369243_batch_results.csv', './class_for_ds-1.tsv')) ## 57%
