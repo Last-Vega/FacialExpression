@@ -3,8 +3,8 @@ import shutil
 
 sub_dir = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 
-result_dir = './data/test'
-result_subdir = './data/test'
+result_dir = './data2/test'
+result_subdir = './data2/test'
 if not os.path.exists(result_dir):
     os.mkdir(result_dir)
 
@@ -14,4 +14,4 @@ for dir_name in sub_dir:
 
     for i in range(10):
         newImgName = dir_name + '_' + str(i).zfill(2)
-        shutil.copyfile(target_dir+'/'+fltr_list[i], './data/test/'+newImgName+'.jpg')
+        shutil.copyfile(target_dir+'/'+fltr_list[i], './data2/test/'+newImgName+'.jpg')
