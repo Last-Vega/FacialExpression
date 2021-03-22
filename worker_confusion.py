@@ -28,6 +28,12 @@ def worker_confusion(f):
     new_index = {0: 'angry', 1: 'disgust', 2: 'fear', 3:'happy', 4:'neutral', 5:'sad', 6:'surprise'}
     confusion_matrix = confusion_matrix.rename(index = new_index)
 
+    if f == './Batch_4350992_batch_results.csv':
+        f_name = 'confusion-1.csv'
+    else:
+        f_name = 'confusion-2.csv'
+    confusion_matrix.to_csv(f_name)
+
     return confusion_matrix
 
 print(worker_confusion('./Batch_4350992_batch_results.csv'))
